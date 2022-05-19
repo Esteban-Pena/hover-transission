@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .Box1{
+            position:relative;
+            float:left;
+            width:400px;
+            height:400px;
+            margin:50px;
+        }
+
+        .image{
+
+            position: absolute;
+            width:100%;
+            height: 100%;
+
+        }
+
+        .image img{
+            width:100%;
+            height:100%;
+        }
+
+        .back{
+
+            position:absolute;
+            width:100%;
+            height:100%;
+            background-color: tomato;
+            display:flex;
+            justify-content: center;
+            align-items:center ;
+            text-align:center;
+            z-index:-2;
+
+        }
+   
+        .Box1:hover .image{
+
+            transform: translateX(50%) scale(25%);
+
+            transition: all 3s ease-in;
+        }
+
+        .Box1:hover .image img{
+            border-radius: 50%;
+            transition: all 3s ease;
+        }
+        .back-content{
+            
+            padding: 0 60px;
+
+        }
+
+
+        .heading{
+            font-weight:bold;
+            font-size:24px;
+        }
+
+        .description{
+
+            margin:20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="Box1">
+        <div class="image">
+            <img src="kanye.jpg" alt= "Stylish Girl" />
+
+        </div>
+
+        <div class="back">
+            <div class="back-content">
+                <div class="heading">
+                    Kanye West
+            </div>
+
+            <div class="description">
+                my beloved
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
